@@ -22,7 +22,7 @@
 
 A static website for reading the notes I write while working through Coursera programs. The home page lists every program I'm taking, each program page shows its full course roadmap, and every module of notes gets its own focused reading page.
 
-Notes are plain Markdown files in `content/`. They're turned into HTML at build time, so the finished site is just static files: no server, no database, no tracking.
+Notes are plain Markdown files in `content/`. They're turned into HTML at build time, so the finished site is just static files with no server and no database. Visits are counted with [Vercel Web Analytics](https://vercel.com/docs/analytics), which uses no cookies and only records anonymous page views.
 
 ## Programs
 
@@ -64,7 +64,7 @@ More will be added as I take them.
 - TypeScript and React
 - Markdown pipeline with GitHub Flavored Markdown, maths, custom callouts, figures and code highlighting
 - [pnpm](https://pnpm.io/) for package management
-- Hosted on [Vercel](https://vercel.com/)
+- Hosted on [Vercel](https://vercel.com/), with Vercel Web Analytics
 
 ## Getting started
 
@@ -183,6 +183,12 @@ src/styles/               tokens (palette, light/dark), base, home, program, rea
 1. Import the repository in Vercel (**Add New → Project**). Next.js is detected automatically, so no settings need changing.
 2. Every push to `main` redeploys the site.
 3. Once the site has its final address, set `url` in `src/lib/site.ts`.
+
+## License
+
+The source code is released under the [MIT License](LICENSE).
+
+The MIT License covers the code only. It does not cover the notes or images in `content/`, or the bundled fonts in `src/app/fonts/`.
 
 ## Disclaimer
 

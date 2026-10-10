@@ -20,6 +20,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "github-slugger": "2.0.0",
     "hast-util-to-jsx-runtime": "2.3.6",
     "hast-util-to-string": "3.0.1",
