@@ -1,0 +1,16 @@
+{
+  "$schema": "../../program.schema.json",
+  "title": "Digital Technologies and the Future of Manufacturing Specialization",
+  "shortTitle": "Digital Manufacturing",
+  "provider": "University of Michigan",
+  "kind": "Specialization",
+  "order": 3,
+  "status": "in-progress",
+  "description": "How the Industrial Internet of Things, digital twins, and additive manufacturing are changing factories, and how to judge their business value and risks.",
+  "url": "https://www.coursera.org/specializations/digital-technologies-future-of-manufacturing",
+  "courses": [
+    { "title": "Industrial Internet of Things (IIoT)" },
+    { "title": "Digital Twins" },
+    { "title": "Additive Manufacturing" }
+  ]
+}

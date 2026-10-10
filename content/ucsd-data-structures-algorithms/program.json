@@ -1,0 +1,19 @@
+{
+  "$schema": "../../program.schema.json",
+  "title": "Data Structures and Algorithms Specialization",
+  "shortTitle": "Data Structures & Algorithms",
+  "provider": "UC San Diego",
+  "kind": "Specialization",
+  "order": 2,
+  "status": "in-progress",
+  "description": "Algorithmic thinking through programming challenges: greedy algorithms, divide and conquer, dynamic programming, core data structures, graphs, and strings.",
+  "url": "https://www.coursera.org/specializations/data-structures-algorithms",
+  "courses": [
+    { "title": "Algorithmic Toolbox" },
+    { "title": "Data Structures" },
+    { "title": "Algorithms on Graphs" },
+    { "title": "Algorithms on Strings" },
+    { "title": "Advanced Algorithms and Complexity" },
+    { "title": "Genome Assembly Programming Challenge" }
+  ]
+}

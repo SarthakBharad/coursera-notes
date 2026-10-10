@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# copied from content/ by `pnpm media` before dev/build
+public/media/
+
+# misc
+.DS_Store
+Thumbs.db
+*.log
+.env*.local
+.vercel

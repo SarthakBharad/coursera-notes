@@ -1,0 +1,30 @@
+{
+  "$schema": "../../program.schema.json",
+  "title": "Google IT Support Professional Certificate",
+  "shortTitle": "Google IT Support",
+  "provider": "Google",
+  "kind": "Professional Certificate",
+  "order": 1,
+  "status": "in-progress",
+  "description": "Entry-level IT support from the ground up: how computers work, networking, operating systems, system administration, and security.",
+  "url": "https://www.coursera.org/professional-certificates/google-it-support",
+  "courses": [
+    {
+      "title": "Technical Support Fundamentals",
+      "url": "https://www.coursera.org/learn/technical-support-fundamentals",
+      "modules": [
+        "Introduction to IT",
+        "Hardware",
+        "Operating System",
+        "Networking",
+        "Software",
+        "Troubleshooting"
+      ]
+    },
+    { "title": "The Bits and Bytes of Computer Networking" },
+    { "title": "Operating Systems and You: Becoming a Power User" },
+    { "title": "System Administration and IT Infrastructure Services" },
+    { "title": "IT Security: Defense against the Digital Dark Arts" },
+    { "title": "Accelerate Your Job Search with AI", "optional": true }
+  ]
+}

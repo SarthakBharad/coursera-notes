@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Coursera program",
+  "description": "Metadata for one Coursera program (a Professional Certificate or Specialization). Lives at content/<program-slug>/program.json.",
+  "type": "object",
+  "required": ["title", "provider", "kind", "courses"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "title": { "type": "string", "description": "Full program name, as on Coursera." },
+    "shortTitle": { "type": "string", "description": "Shorter name for tight spaces (search results, breadcrumbs)." },
+    "provider": { "type": "string", "description": "Who offers it, e.g. Google or University of Michigan." },
+    "kind": { "type": "string", "description": "Professional Certificate, Specialization, Course, ..." },
+    "order": { "type": "number", "description": "Position on the home page. Lower comes first." },
+    "status": {
+      "enum": ["in-progress", "completed", "paused", "planned"],
+      "description": "Your own status for the program."
+    },
+    "description": { "type": "string" },
+    "url": { "type": "string", "format": "uri", "description": "Coursera page for the program." },
+    "courses": {
+      "type": "array",
+      "description": "Every course in the program, in order. Course N matches the folder whose name starts with the number N (e.g. 01-...).",
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "optional": { "type": "boolean", "description": "Marks an optional course. It is left out of progress totals." },
+          "modules": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Module titles in order. Optional; modules you have notes for show up even if they are not listed here."
+          }
+        }
+      }
+    }
+  }
+}
